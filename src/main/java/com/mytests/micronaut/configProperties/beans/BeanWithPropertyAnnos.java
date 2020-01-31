@@ -1,6 +1,7 @@
 package com.mytests.micronaut.configProperties.beans;
 
 import io.micronaut.context.annotation.Property;
+import io.micronaut.context.annotation.Value;
 
 import javax.inject.Singleton;
 
@@ -15,6 +16,7 @@ public class BeanWithPropertyAnnos {
 
     @Property(name = "my.props.p1")
     String p1;
+    @Value("${my.props.p2}")
     String p2;
 
     public String getP1() {

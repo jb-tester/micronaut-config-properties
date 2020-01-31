@@ -21,4 +21,14 @@ class BeanWithPropertyAnnosTest {
 
 
     }
+    @Test
+    void testInjectingValueUsingValueAnnotation() {
+        ApplicationContext context = ApplicationContext.run();
+        BeanWithPropertyAnnos bean = context.getBean(BeanWithPropertyAnnos.class);
+        //
+        assertEquals(bean.getP2(),"p2_value");
+
+
+    }
+
 }
