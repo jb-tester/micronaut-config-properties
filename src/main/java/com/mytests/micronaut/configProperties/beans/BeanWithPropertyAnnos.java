@@ -13,7 +13,7 @@ import javax.inject.Singleton;
 @Singleton
 public class BeanWithPropertyAnnos {
 
-    @Property(name = "")
+    @Property(name = "my.props.p1")
     String p1;
     String p2;
 
