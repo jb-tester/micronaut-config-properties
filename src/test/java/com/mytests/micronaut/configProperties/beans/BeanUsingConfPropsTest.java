@@ -22,14 +22,14 @@ class BeanUsingConfPropsTest {
         System.out.println("**********************************");
         assertEquals(bean.getMyConfProps(), "foo bar");
     }
-    /*@Test
+    @Test
     void getMyConfProps2() {
-        
+
         ApplicationContext context = ApplicationContext.run();
         BeanUsingConfProps bean = context.getBean(BeanUsingConfProps.class);
         System.out.println("**********************************");
         System.out.println(bean.getMyConfProps());
         System.out.println("**********************************");
-        assertEquals(bean.getMyConfProps(),"foo bar");
-    }*/
+        assertEquals(bean.getMyConfProps(), "conf1 props conf2 props");
+    }
 }

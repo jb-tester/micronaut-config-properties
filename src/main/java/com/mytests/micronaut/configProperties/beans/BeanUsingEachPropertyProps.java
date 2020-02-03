@@ -17,4 +17,6 @@ public class BeanUsingEachPropertyProps {
         String rez = epConfig1.getProp2();
         return "first " + rez;
     }
+
+
 }

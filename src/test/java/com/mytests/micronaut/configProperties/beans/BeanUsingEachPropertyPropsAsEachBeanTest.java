@@ -25,4 +25,17 @@ class BeanUsingEachPropertyPropsAsEachBeanTest {
         System.out.println("**********************************");
         assertEquals(first.getProps(), "first foo");
     }
+
+    @Test
+    void getProps2() {
+
+        ApplicationContext context = ApplicationContext.run();
+
+        BeanUsingEachPropertyPropsAsEachBean second = context.getBean(BeanUsingEachPropertyPropsAsEachBean.class,
+                Qualifiers.byName("second"));
+        System.out.println("**********************************");
+        System.out.println(second.getProps());
+        System.out.println("**********************************");
+        assertEquals(second.getProps(), "second eachbean : second prop2");
+    }
 }

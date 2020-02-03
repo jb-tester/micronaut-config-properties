@@ -23,4 +23,16 @@ class BeanUsingEachPropertyPropsTest {
         System.out.println("**********************************");
         assertEquals(bean.getEPConfigProps(), "first foo");
     }
+
+    @Test
+    void getEPConfigProps2() {
+
+        ApplicationContext context = ApplicationContext.run();
+
+        BeanUsingEachPropertyProps bean = context.getBean(BeanUsingEachPropertyProps.class);
+        System.out.println("**********************************");
+        System.out.println(bean.getEPConfigProps());
+        System.out.println("**********************************");
+        assertEquals(bean.getEPConfigProps(), "first eachproperty: first prop2");
+    }
 }

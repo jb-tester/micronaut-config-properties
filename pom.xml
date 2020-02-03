@@ -161,12 +161,12 @@
                             <path>
                                 <groupId>io.micronaut</groupId>
                                 <artifactId>micronaut-inject-java</artifactId>
-                                <version>1.3.0.M1</version>
+                                <version>${micronaut.version}</version>
                             </path>
                             <path>
                                 <groupId>io.micronaut</groupId>
                                 <artifactId>micronaut-validation</artifactId>
-                                <version>1.3.0.M1</version>
+                                <version>${micronaut.version}</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>
@@ -184,12 +184,12 @@
                                     <path>
                                         <groupId>io.micronaut</groupId>
                                         <artifactId>micronaut-inject-java</artifactId>
-                                        <version>1.3.0.M1</version>
+                                        <version>${micronaut.version}</version>
                                     </path>
                                     <path>
                                         <groupId>io.micronaut</groupId>
                                         <artifactId>micronaut-validation</artifactId>
-                                        <version>1.3.0.M1</version>
+                                        <version>${micronaut.version}</version>
                                     </path>
                                 </annotationProcessorPaths>
                             </configuration>
