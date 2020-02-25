@@ -1,7 +1,7 @@
-package com.mytests.micronaut.configProperties.beans;
+package com.mytests.micronaut.configProperties.configurationProperties.beans;
 
-import com.mytests.micronaut.configProperties.confprops.MyConfProps1;
-import com.mytests.micronaut.configProperties.confprops.MyConfProps2;
+import com.mytests.micronaut.configProperties.configurationProperties.confprops.MyConfProps1;
+import com.mytests.micronaut.configProperties.configurationProperties.confprops.MyConfProps2;
 
 import javax.inject.Singleton;
 

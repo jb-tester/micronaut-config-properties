@@ -1,5 +1,6 @@
 package com.mytests.micronaut.configProperties.beans;
 
+import com.mytests.micronaut.configProperties.propertyAnnotation.BeanWithPropertyAnnos;
 import io.micronaut.context.ApplicationContext;
 import org.junit.jupiter.api.Test;
 

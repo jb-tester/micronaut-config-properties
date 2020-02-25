@@ -1,5 +1,6 @@
 package com.mytests.micronaut.configProperties.beans;
 
+import com.mytests.micronaut.configProperties.eachProperty.beans.BeanUsingEachPropertyPropsAsEachBean;
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.inject.qualifiers.Qualifiers;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
-package com.mytests.micronaut.configProperties.beans;
+package com.mytests.micronaut.configProperties.eachProperty.beans;
 
-import com.mytests.micronaut.configProperties.eachPropertyBeans.MyEPConfig2;
+import com.mytests.micronaut.configProperties.eachProperty.eachPropertyConfigurations.MyEPConfig2;
 import io.micronaut.context.annotation.EachBean;
 import io.micronaut.context.annotation.Factory;
 

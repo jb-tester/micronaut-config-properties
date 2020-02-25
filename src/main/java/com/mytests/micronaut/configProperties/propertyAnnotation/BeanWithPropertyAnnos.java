@@ -1,4 +1,4 @@
-package com.mytests.micronaut.configProperties.beans;
+package com.mytests.micronaut.configProperties.propertyAnnotation;
 
 import io.micronaut.context.annotation.Property;
 import io.micronaut.context.annotation.Value;
@@ -16,6 +16,7 @@ public class BeanWithPropertyAnnos {
 
     @Property(name = "my.props.p1")
     String p1;
+
     @Value("${my.props.p2}")
     String p2;
 
@@ -23,15 +24,8 @@ public class BeanWithPropertyAnnos {
         return p1;
     }
 
-    public void setP1(String p1) {
-        this.p1 = p1;
-    }
-
     public String getP2() {
         return p2;
     }
 
-    public void setP2(String p2) {
-        this.p2 = p2;
-    }
 }

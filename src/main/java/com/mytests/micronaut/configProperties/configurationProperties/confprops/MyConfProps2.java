@@ -1,9 +1,9 @@
-package com.mytests.micronaut.configProperties.confprops;
+package com.mytests.micronaut.configProperties.configurationProperties.confprops;
 
 import io.micronaut.context.annotation.ConfigurationProperties;
 
-@ConfigurationProperties("my.confprops.cp1")
-public class MyConfProps1 {
+@ConfigurationProperties("my.confprops.cp2")
+public class MyConfProps2 {
 
     String prop1;
 

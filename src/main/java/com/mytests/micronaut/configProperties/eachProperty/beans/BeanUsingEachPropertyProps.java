@@ -1,6 +1,6 @@
-package com.mytests.micronaut.configProperties.beans;
+package com.mytests.micronaut.configProperties.eachProperty.beans;
 
-import com.mytests.micronaut.configProperties.eachPropertyBeans.MyEPConfig1;
+import com.mytests.micronaut.configProperties.eachProperty.eachPropertyConfigurations.MyEPConfig1;
 
 import javax.inject.Inject;
 import javax.inject.Named;

@@ -1,4 +1,4 @@
-package com.mytests.micronaut.configProperties.eachPropertyBeans;
+package com.mytests.micronaut.configProperties.eachProperty.eachPropertyConfigurations;
 
 import io.micronaut.context.annotation.EachProperty;
 import io.micronaut.context.annotation.Parameter;

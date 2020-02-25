@@ -1,4 +1,4 @@
-package com.mytests.micronaut.configProperties.beans;
+package com.mytests.micronaut.configProperties.eachProperty.beans;
 
 public class BeanUsingEachPropertyPropsAsEachBean {
 
