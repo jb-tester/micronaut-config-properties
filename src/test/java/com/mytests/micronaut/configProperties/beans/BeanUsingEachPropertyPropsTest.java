@@ -14,14 +14,18 @@ class BeanUsingEachPropertyPropsTest {
     void getEPConfigProps() {
         Map<String, Object> map = new HashMap<>();
         map.put("my.eachprop.ep1.first.prop2", "foo");
-        map.put("my.eachprop.ep2.second.prop2", "bar");
+        map.put("my.eachprop.ep1.second.prop2", "bar");
         ApplicationContext context = ApplicationContext.run(map);
 
         BeanUsingEachPropertyProps bean = context.getBean(BeanUsingEachPropertyProps.class);
         System.out.println("**********************************");
-        System.out.println(bean.getEPConfigProps());
+        System.out.println(bean.getEPConfigProps_First());
         System.out.println("**********************************");
-        assertEquals(bean.getEPConfigProps(), "first foo");
+        assertEquals(bean.getEPConfigProps_First(), "first foo");
+        System.out.println("**********************************");
+        System.out.println(bean.getEPConfigProps_Second());
+        System.out.println("**********************************");
+        assertEquals(bean.getEPConfigProps_Second(), "second bar");
     }
 
     @Test
@@ -31,8 +35,12 @@ class BeanUsingEachPropertyPropsTest {
 
         BeanUsingEachPropertyProps bean = context.getBean(BeanUsingEachPropertyProps.class);
         System.out.println("**********************************");
-        System.out.println(bean.getEPConfigProps());
+        System.out.println(bean.getEPConfigProps_First());
         System.out.println("**********************************");
-        assertEquals(bean.getEPConfigProps(), "first eachproperty: first prop2");
+        assertEquals(bean.getEPConfigProps_First(), "first eachproperty: first prop2");
+        System.out.println("**********************************");
+        System.out.println(bean.getEPConfigProps_Second());
+        System.out.println("**********************************");
+        assertEquals(bean.getEPConfigProps_Second(), "second eachproperty: second prop2");
     }
 }

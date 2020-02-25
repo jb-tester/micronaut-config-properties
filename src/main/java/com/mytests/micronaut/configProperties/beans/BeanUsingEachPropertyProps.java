@@ -11,12 +11,18 @@ public class BeanUsingEachPropertyProps {
 
     @Inject
     @Named("first")
-    MyEPConfig1 epConfig1;
+    MyEPConfig1 epConfig1_first;
 
-    public String getEPConfigProps() {
-        String rez = epConfig1.getProp2();
+    public String getEPConfigProps_First() {
+        String rez = epConfig1_first.getProp2();
         return "first " + rez;
     }
+    @Inject
+    @Named("second")
+    MyEPConfig1 epConfig1_second;
 
-
+    public String getEPConfigProps_Second() {
+        String rez = epConfig1_second.getProp2();
+        return "second " + rez;
+    }
 }
